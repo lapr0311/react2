@@ -1,20 +1,29 @@
-a {
-    text-decoration: none;
-    color: white;
-  }
+
   
-  .navbar {
-    background: rgb(90, 90, 90);
+  .barra {
+    background: black;
     padding: 20px;
-    color: white;
+    color: rgb(216, 71, 71);
   }
   
-  .active {
+  .H {
+    font-family: fantasy;
     color: red;
     margin-left: 30px;
   }
   
-  .inactive {
-    color: white;
+  .S {
+    font-family: fantasy;
+    font-size:larger;
+    color:red;
     margin-left: 30px;
   }
+
+  .Charmander{
+    width: 500px;
+    height: 500px;
+  }
+.titulo2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: red;
+}

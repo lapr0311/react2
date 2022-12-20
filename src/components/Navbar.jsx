@@ -3,10 +3,10 @@ import '../assets/navbar.css';
 
 
 function Navbar() {
-    const setActiveClass = ({isActive}) => (isActive ? 'active' : 'inactive')
+    const setActiveClass = ({isActive}) => (isActive ? 'H' : 'S')
     return(
         <div className='container-fluid'>
-            <nav className="navbar container" >
+            <nav className="barra container" >
             
                 <div>
                     <NavLink className={setActiveClass} to='/'>HOME</NavLink>

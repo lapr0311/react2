@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
+import '../assets/navbar.css';
 
 
 
@@ -14,7 +15,8 @@ function ListaPokemon() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(url).then(resp => resp.json())
+        fetch(url)
+            .then(resp => resp.json())
             .then(data => setListaPokemones(data.results))
     }, [])
 
@@ -24,9 +26,9 @@ function ListaPokemon() {
 
     return (
         <div id='Home' className='container text-center justify-content-center'>
-            <h1 className='tituloPrincipal'>Selecciona tu Pokemon Favorito</h1>
+            <h1 className='titulo2'>Selecciona tu Pokemon Favorito</h1>
             <div className="text-center">
-                <Form.Select className="d-inline formSelect m-4" aria-label="Default select example"
+                <Form.Select className="d-inline formSelect m-4" 
                     onChange={({ target }) => setPokemon(target.value)}
                 >
                     <option>Pokemones</option>
